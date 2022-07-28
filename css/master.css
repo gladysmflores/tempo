@@ -1,0 +1,14 @@
+button{
+  font-size: 30px;
+  border-radius: 40px;
+  background-color: white;
+  padding: 2%;
+  width: 30%;
+  margin-left: 37%;
+  margin-top: 28%;
+}
+button:hover{
+  color: grey;
+  border: 1px solid white;
+  pointer-events: visiblePainted;
+}

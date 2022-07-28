@@ -1,0 +1,29 @@
+body{
+  background-color: black;
+}
+
+button{
+  font-size: 30px;
+  border-color: white;
+  border-radius: 0px;
+  background-color: #e8e0cc;
+  padding: 2%;
+  height: 150px;
+  width: 20%;
+  margin-left: 20%;
+  margin-top: 10%;
+  float: left;
+}
+
+button:hover{
+  color: white;
+  border: 1px solid white;
+  pointer-events: visiblePainted;
+}
+
+h1{
+  color: #e8e0cc;
+  margin-left: 50%;
+  margin-top: 5%;
+  font-family: monaco;
+}

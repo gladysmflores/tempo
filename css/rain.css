@@ -22,12 +22,13 @@ section{
 div{
   float: left;
   height: 50px;
-  width: 25px;
+  width: 0px;
   color: white;
   font-weight: bold;
   font-family: monaco;
-  margin-left: 120px;
+  margin-left: 100px;
   margin-top: 40px;
+  justify-content: center;
 }
 
 video{

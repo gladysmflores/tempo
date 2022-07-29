@@ -10,6 +10,24 @@ h1{
   font-family: monaco;
 }
 
+div{
+  border: 1px solid white;
+  float:left;
+  height:100px;
+  width: 30%;
+  margin-top: 300px;
+  margin-left: 150px;
+  z-index: 1;
+  font-weight: 100;
+  position: absolute;
+}
+
+.container{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
 button{
   font-size: 30px;
   border-color: white;

@@ -1,19 +1,29 @@
-document.getElementById("rainVid").play();
-console.log("working");
+// document.getElementById("rainVid").play();
+// console.log("working");
 
-const startingMinutes = 25;
-let time = startingMinutes * 60;
+var minute = 24;
+var second = 60;
 
-const countdownElement = document.getElementById("countdownTimer");
+setInterval( function timer(){
+  if( minute == 0 && second == 1){
+      document.getElementById("countedownTimer").innerHTML = "00:00";
+  }else{
+      second--;
+      if( second == 0 ){
+          minute--;
+          second = 60;
 
-setInterval(updateCountown, 1000);
+          if( minute == 0 ){
+              minute = minute;
+          }
+      }
+      if( minute.toString().length == 1 ){
+          minute = "0" +minute;
+      }
+      if( second.toString().length ==1 ){
+          second = "0"+second;
+      }
+      document.getElementById("countedownTimer").innerHTML = minute + ":" + second;
 
-function updateCountown() {
-  const minutes = Math.floor(time / 60);
-  let seconds = time % 60;
-
-  seconds = seconds < 25 ? : '0' + seconds : seconds;
-
-  countdownEl.innerHTML = '${minutes}:${seconds}';
-  time--;
-}
+  }
+}, 1000);
